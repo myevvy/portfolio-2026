@@ -2,16 +2,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 2rem 8rem;
     box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-.logo-link {
+.logo a {
     text-decoration: none;
-    color: #000000;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    color: #8B0000;
+}
+
+.logo a span{
+    color: #FFAEC0;
 }
 
 nav ul {
@@ -23,11 +31,11 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: #000000;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ff6347;
+    color: #FFAEC0;
 }
-

@@ -1,1 +1,256 @@
 /*Css principal*/
+
+/*Início*/
+#inicio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffbfc;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: 2em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 50%;
+}
+
+.info p:first-child {
+    color: #8B0000;
+    font-weight: bold;
+    font-size: 0.8em;
+    background-color: #FFE4E1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    width: fit-content;
+    span {
+        color: #FFAEC0;
+        font-size: 1em;
+        margin-right: 0.5em;
+    }
+}
+
+.info h1 {
+    font-size: 3em;
+    color: #8B0000;
+}
+
+.info p:nth-child(3) {
+    font-size: 2em;
+    color: #262626;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+.info p:nth-child(4) {
+    font-size: 1em;
+    color: #262626;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+.btn-info {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.btn-info a {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 1em 1.5em;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-info a:first-child {
+    background-color: #8B0000;
+    color: #FFFFFF;
+}
+
+.btn-info a:last-child {
+    background-color: #FFAEC0;
+    color: #8B0000;
+}
+
+.btn-info a:first-child:hover {
+    background-color: #8B0000;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.btn-info a:last-child:hover {
+    background-color: #FFAEC0;
+    color: #8B0000;
+    transform: translateY(-2px);
+}
+
+.code-card {
+  background: #1A0A0E;      /* fundo escuro */
+  border-radius: 14px;
+  padding: 28px;
+  width: 20em;
+  font-family: 'Courier New', monospace;  /* fonte de código */
+  font-size: 1.3em;
+  line-height: 1.9;
+}
+
+/* os três pontinhos */
+.dots {
+  margin-bottom: 10px;
+}
+
+.dots span {
+  width: 15px; height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.red    { background: #FF5F57; }
+.yellow { background: #FEBC2E; }
+.green-dot { background: #28C840; }
+
+/* cores do "syntax highlight" */
+.pink  { color: #FFAEC0; }   /* palavras-chave */
+.green { color: #A8D8A8; }   /* strings */
+.white { color: #E8E8E8; }   /* variáveis */
+.gray  { color: #888888; }   /* símbolos */
+
+/*Sobre mim*/
+#sobre {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fffbfc;
+    margin-left: 8em;
+    margin-right: 8em;
+}
+
+.title-sbr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+ .title-sbr p {
+    font-size: 1em;
+    color: #8B0000;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}
+
+.title-sbr h2 {
+    font-size: 3em;
+    color: black;
+    span {
+        color: #8B0000;
+    }
+}
+
+.container-sbr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10em;
+}
+
+.texto-sbr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.texto-sbr p {
+    font-size: 1.2em;
+    color: #262626;
+    font-weight: 400;
+    span{
+        color: #8B0000;
+        font-weight: bold;
+    }
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 20px 1fr; 
+  gap: 1.2em;
+}
+
+.linha-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ponto {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #8B0000;
+  border: 2px solid #FFE4E1;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.barra {
+  width: 2px;
+  flex: 1; 
+  background-color: #FFD6E0;
+  margin-top: 4px;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  padding-bottom: 2em;
+}
+
+.conteudo .ano {
+  font-size: 1em;
+  color: #8B0000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.conteudo .titulo {
+  font-size: 1.2em;
+  color: #262626;
+  font-weight: bold;
+}
+
+.conteudo .nome {
+  font-size: 1em;
+  color: #262626;
+  font-weight: 600;
+}
+
+.conteudo .desc {
+  font-size: 1em;
+  color: #262626;
+  font-weight: 400;
+}
